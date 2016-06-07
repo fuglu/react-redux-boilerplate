@@ -1,0 +1,20 @@
+{
+	"parser": "babel-eslint",
+	"extends": [
+		"airbnb"
+	],
+	"globals": {
+		"__DEVELOPMENT__": true,
+		"assert": true,
+		"expect": true,
+		"sinon": true
+	},
+	"rules": {
+		"indent" : [2, "tab", { "SwitchCase": 1 }],
+		"react/jsx-indent": [2, 'tab'],
+		"react/jsx-indent-props": [2, 'tab']
+	},
+	"env": {
+		"mocha": true
+	}
+}
