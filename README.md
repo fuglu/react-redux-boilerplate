@@ -1,6 +1,10 @@
 React/Redux Boilerplate
 =======================
 
+[![Dependency Status](https://david-dm.org/fuglu/react-redux-boilerplate.svg)](https://david-dm.org/fuglu/react-redux-boilerplate)
+[![Build Status](https://travis-ci.org/fuglu/react-redux-boilerplate.svg)](https://travis-ci.org/fuglu/react-redux-boilerplate)
+[![GitHub version](https://badge.fury.io/gh/fuglu%2Freact-redux-boilerplate.svg)](http://badge.fury.io/gh/fuglu%2Freact-redux-boilerplate)
+
 What's inside?
 --------------
 
