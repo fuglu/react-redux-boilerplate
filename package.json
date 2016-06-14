@@ -11,7 +11,7 @@
     "deploy": "npm run lint && npm run test && npm run build"
   },
   "author": "Benjamin Kluck",
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "dependencies": {
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
