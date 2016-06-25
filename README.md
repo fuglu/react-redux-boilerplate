@@ -35,15 +35,16 @@ npm start
 open http://localhost:3000
 ```
 
-| Alias                 | Command                                         | Description                                 |
-|-----------------------|-------------------------------------------------|---------------------------------------------|
-| `npm start`           | `webpack-dev-server`                            | Start the development server                |
-| `npm run build`       | `webpack`                                       | Compile the application to `dist/`          |
-| `npm run lint`        | `eslint`                                        | Static code analysis                        |
-| `npm run lint:fix`    | `eslint --fix`                                  | Fix linter issues                           |
-| `npm run test`        | `karma start --single-run`                      | Run test suite and generate coverage report |
-| `npm run test:watch`  | `karma start`                                   | Run test suite and watch for changes        |
-| `npm run deploy`      | `npm run lint && npm run test && npm run build` | Lint, test and build the application        |
+| Alias                 | Command                          | Description                                 |
+|-----------------------|----------------------------------|---------------------------------------------|
+| `npm start`           | `webpack-dev-server`             | Start the development server                |
+| `npm run build`       | `webpack`                        | Compile the application to `dist/`          |
+| `npm run lint`        | `eslint`                         | Static code analysis                        |
+| `npm run lint:fix`    | `eslint --fix`                   | Fix linter issues                           |
+| `npm run test`        | `karma start --single-run`       | Run test suite and generate coverage report |
+| `npm run test:watch`  | `karma start`                    | Run test suite and watch for changes        |
+| `npm run clean`       | `rimraf dist/`                   | Remove `dist/` folder                       |
+| `npm run deploy`      | `clean && lint && test && build` | Clean, lint, test and build the application |
 
 
 
