@@ -43,11 +43,9 @@ IndexContainer.propTypes = {
 
 const mapStateToProps = (state) => ({
 	counter: state.counter,
-
 });
 const mapDispatchToProps = {
 	increment,
-
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(IndexContainer);

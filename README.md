@@ -5,6 +5,8 @@ React/Redux Boilerplate
 [![Build Status](https://travis-ci.org/fuglu/react-redux-boilerplate.svg)](https://travis-ci.org/fuglu/react-redux-boilerplate)
 [![GitHub version](https://badge.fury.io/gh/fuglu%2Freact-redux-boilerplate.svg)](http://badge.fury.io/gh/fuglu%2Freact-redux-boilerplate)
 
+
+
 What's inside?
 --------------
 
@@ -24,6 +26,7 @@ What's inside?
 * [Istanbul](https://github.com/gotwarlost/istanbul) - Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests.
 * [ESLint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) - A mostly reasonable approach to JavaScript
+
 
 
 Usage
@@ -71,12 +74,49 @@ Structure
 └── webpack.config.babel.js      # webpack configuration file
 ```
 
+
+
 Howtos
 ------
 
+### Styles
+
+```jsx
+// example.js
+import './example.scss';
+
+// ...
+
+return (
+	<div className={'example'} />
+);
+```
+
+```jsx
+// inline-example.js
+const styles = {
+	headline: {
+		color: '#00D8FF',
+	},
+	subheadline: {
+		color: '#764ABC',
+	},
+};
+
+// ...
+
+return (
+	<div>
+		<h1 style={styles.headline}>...</h1>
+		<h2 style={styles.subheadline}>...</h2>
+	</div>
+);
+```
+
+
 ### Images
 
-```javascript
+```jsx
 // example.js
 import ReduxLogo from './static/ReduxLogo.svg';
 
@@ -95,6 +135,33 @@ body {
 ```
 
 
+### Routing
+
+```jsx
+// App.js
+
+// ...
+	<Router history={history}>
+		<Route path="/" component={IndexContainer} />
+		<Route path="/example" component={ExampleContainer} />
+	</Router>
+// ...
+```
+
+```jsx
+// link-example.js
+import { Link, browserHistory } from 'react-router';
+
+// ...
+
+return (
+	<div>
+		<Link to={'/example'}>Example link</Link>
+		<button onClick={() => { browserHistory.push('/example'); }}>Example button</button>
+	</div>
+);
+```
+
 
 ### Tests
 
@@ -102,7 +169,7 @@ body {
 npm run test:watch
 ```
 
-```javascript
+```jsx
 // example.spec.js
 describe('Just testing', () => {
 	it('some foo', () => {
@@ -114,4 +181,3 @@ describe('Just testing', () => {
 	});
 });
 ```
-
