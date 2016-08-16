@@ -20,9 +20,6 @@ module.exports = (config) => {
 				'react/addons': true,
 			},
 			module: {
-				preLoaders: [
-					{ test: /\.js$/, exclude: /(\.spec\.js|node_modules)/, loader: 'isparta' },
-				],
 				loaders: [
 					{ test: /\.json$/, loader: 'json' },
 					{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
