@@ -6,14 +6,19 @@ module.exports = (config) => {
 		reporters: ['mocha', 'coverage'],
 
 		files: [
-			'src/**/*.spec.js',
+			'src/**/*.spec.js*',
 		],
 
 		preprocessors: {
-			'src/**/*.spec.js': ['webpack'],
+			'src/**/*.spec.js*': ['webpack'],
 		},
 
 		webpack: {
+			// https://github.com/cheeriojs/cheerio/commit/7b59afbc7a6aa39376021593e011bf718350bcb4
+			resolve: {
+				extensions: ['', '.json', '.js', '.jsx'],
+			},
+			// https://github.com/airbnb/enzyme/issues/47
 			externals: {
 				'react/lib/ExecutionEnvironment': true,
 				'react/lib/ReactContext': true,
@@ -22,7 +27,7 @@ module.exports = (config) => {
 			module: {
 				loaders: [
 					{ test: /\.json$/, loader: 'json' },
-					{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+					{ test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
 				],
 			},
 		},

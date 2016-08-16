@@ -7,7 +7,7 @@ const __DEVELOPMENT__ = process.env.NODE_ENV === 'development';
 module.exports = {
 	entry: [
 		'react-hot-loader/patch',
-		'./src/index.js',
+		'./src/index.jsx',
 	],
 
 	output: {
@@ -16,10 +16,14 @@ module.exports = {
 		publicPath: '/',
 	},
 
+	resolve: {
+		extensions: ['', '.js', '.jsx'],
+	},
+
 	module: {
 		loaders: [
 			{
-				test: /.js$/,
+				test: /.jsx?$/,
 				exclude: /node_modules/,
 				loaders: ['babel-loader'],
 			},
