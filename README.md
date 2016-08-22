@@ -15,6 +15,7 @@ What's inside?
 * [React Router](https://github.com/reactjs/react-router) - React Router is a complete routing library for React.
 * [Babel](https://webpack.github.io/) - Babel is a JavaScript compiler. Use next generation JavaScript, today.
 * [webpack](https://webpack.github.io/) - A bundler for javascript and friends. Packs many modules into a few bundled assets.
+* [nodemon](http://nodemon.io/) - nodemon is a utility that will monitor for any changes in your source and automatically restart your server.
 * [React Hot Loader](https://github.com/gaearon/react-hot-loader) - Tweak React components in real time.
 * [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) - DevTools for Redux with actions history, undo and replay
 * [Karma](https://karma-runner.github.io) - Test your code on real browsers and real devices such as phones, tablets or on a headless PhantomJS instance.
