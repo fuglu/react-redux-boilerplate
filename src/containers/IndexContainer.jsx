@@ -19,7 +19,7 @@ const style = {
 	},
 };
 
-const IndexContainer = (props) => (
+const IndexContainer = props => (
 	<div style={style.container}>
 		<img
 			alt={'Redux logo'}
@@ -41,7 +41,7 @@ IndexContainer.propTypes = {
 	increment: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
 	counter: state.counter,
 });
 const mapDispatchToProps = {

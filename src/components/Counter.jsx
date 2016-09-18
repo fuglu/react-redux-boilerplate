@@ -9,7 +9,7 @@ const style = {
 	border: 'medium none',
 };
 
-const Counter = (props) => (
+const Counter = props => (
 	<button
 		onClick={props.increment}
 		style={style}

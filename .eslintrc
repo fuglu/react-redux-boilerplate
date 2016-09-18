@@ -14,8 +14,9 @@
 		"sinon": true
 	},
 	"rules": {
-		"indent" : [2, "tab", { "SwitchCase": 1 }],
-		"react/jsx-indent": [2, 'tab'],
-		"react/jsx-indent-props": [2, 'tab']
+		"indent" : ["error", "tab", { "SwitchCase": 1 }],
+		"react/jsx-indent": ["error", 'tab'],
+		"react/jsx-indent-props": ["error", 'tab'],
+		"no-tabs": "off"
 	}
 }
