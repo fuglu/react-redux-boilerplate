@@ -47,7 +47,7 @@ open http://localhost:3000
 | `npm run lint:fix`    | `eslint --fix`                   | Fix linter issues                           |
 | `npm run test`        | `karma start --single-run`       | Run test suite and generate coverage report |
 | `npm run test:watch`  | `karma start`                    | Run test suite and watch for changes        |
-| `npm run clean`       | `rimraf dist/`                   | Remove `dist/` folder                       |
+| `npm run clean`       | `rimraf coverage/ dist/`         | Remove `coverage/` and `dist/` folder       |
 | `npm run deploy`      | `clean && lint && test && build` | Clean, lint, test and build the application |
 
 
