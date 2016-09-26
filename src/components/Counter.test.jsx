@@ -11,7 +11,7 @@ describe('<Counter>', () => {
 			/>
 		);
 
-		expect(counter.find('button')).to.have.length(1);
+		expect(counter.find('button').length).toBe(1);
 	});
 	describe('<button>', () => {
 		it('should display the counter', () => {
@@ -22,10 +22,10 @@ describe('<Counter>', () => {
 				/>
 			);
 
-			expect(counter.find('button').text()).to.match(/42$/);
+			expect(counter.find('button').text()).toBe('42');
 		});
 		it('should call the increment action on click', () => {
-			const spy = sinon.spy();
+			const spy = jest.fn();
 			const counter = shallow(
 				<Counter
 					counter={0}
@@ -34,7 +34,7 @@ describe('<Counter>', () => {
 			);
 
 			counter.find('button').simulate('click');
-			expect(spy.calledOnce).to.equal(true);
+			expect(spy).toBeCalled();
 		});
 	});
 });

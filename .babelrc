@@ -1,16 +1,4 @@
 {
 	"presets": ["es2015", "stage-0", "react"],
-	"plugins": ["react-hot-loader/babel"],
-
-	"env": {
-		"test": {
-			"plugins": [
-				["istanbul", {
-					"exclude": [
-						"**/*.spec.js*"
-					]
-				}]
-			]
-		}
-	}
+	"plugins": ["react-hot-loader/babel"]
 }

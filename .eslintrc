@@ -5,13 +5,10 @@
 	],
 	"env": {
 		"browser": true,
-		"mocha": true
+		"jest": true
 	},
 	"globals": {
 		"__DEVELOPMENT__": true,
-		"assert": true,
-		"expect": true,
-		"sinon": true
 	},
 	"rules": {
 		"indent" : ["error", "tab", { "SwitchCase": 1 }],

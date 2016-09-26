@@ -1,10 +1,10 @@
 import counterReducer, { increment } from './counter';
 
 describe('counter', () => {
-	it('has an initial state', () => {
+	it('initial state is 0', () => {
 		const initialState = counterReducer(undefined, {});
 
-		expect(initialState).to.be.a('number');
+		expect(initialState).toBe(0);
 	});
 	describe('increment action', () => {
 		it('increments the counter', () => {
@@ -12,7 +12,7 @@ describe('counter', () => {
 
 			const incrementedState = counterReducer(initialState, increment());
 
-			expect(incrementedState).to.equal(initialState + 1);
+			expect(incrementedState).toBe(initialState + 1);
 		});
 	});
 });

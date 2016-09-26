@@ -18,13 +18,8 @@ What's inside?
 * [nodemon](http://nodemon.io/) - nodemon is a utility that will monitor for any changes in your source and automatically restart your server.
 * [React Hot Loader](https://github.com/gaearon/react-hot-loader) - Tweak React components in real time.
 * [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension) - DevTools for Redux with actions history, undo and replay
-* [Karma](https://karma-runner.github.io) - Test your code on real browsers and real devices such as phones, tablets or on a headless PhantomJS instance.
-* [PhantomJS](http://phantomjs.org/) - PhantomJS is a headless WebKit scriptable with JavaScript.
-* [Mocha](https://mochajs.org/) - Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun.
-* [Chai](http://chaijs.com/) - Chai is a BDD / TDD assertion library for node and the browser that can be delightfully paired with any javascript testing framework.
+* [Jest](https://facebook.github.io/jest/) - Jest is a JavaScript unit testing framework, used by Facebook to test services and React applications.
 * [Enzyme](http://airbnb.io/enzyme/) - Enzyme is a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output.
-* [Sinon](http://sinonjs.org/) - Standalone test spies, stubs and mocks for JavaScript.
-* [Istanbul](https://github.com/gotwarlost/istanbul) - Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests.
 * [ESLint](http://eslint.org/) - The pluggable linting utility for JavaScript and JSX
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) - A mostly reasonable approach to JavaScript
 
@@ -45,8 +40,8 @@ open http://localhost:3000
 | `npm run build`       | `webpack`                        | Compile the application to `dist/`          |
 | `npm run lint`        | `eslint`                         | Static code analysis                        |
 | `npm run lint:fix`    | `eslint --fix`                   | Fix linter issues                           |
-| `npm run test`        | `karma start --single-run`       | Run test suite and generate coverage report |
-| `npm run test:watch`  | `karma start`                    | Run test suite and watch for changes        |
+| `npm run test`        | `jest --coverage`                | Run test suite and generate coverage report |
+| `npm run test:watch`  | `jest --watch`                   | Run test suite and watch for changes        |
 | `npm run clean`       | `rimraf coverage/ dist/`         | Remove `coverage/` and `dist/` folder       |
 | `npm run deploy`      | `clean && lint && test && build` | Clean, lint, test and build the application |
 
