@@ -9,8 +9,9 @@ const store = createStore(rootReducer, initialState, compose(
 ));
 
 if (__DEVELOPMENT__ && module.hot) {
-	module.hot.accept('./rootReducer', () =>
-		store.replaceReducer(require('./rootReducer').default) // eslint-disable-line global-require
+	module.hot.accept(
+		'./rootReducer',
+		() => store.replaceReducer(require('./rootReducer').default), // eslint-disable-line global-require
 	);
 }
 

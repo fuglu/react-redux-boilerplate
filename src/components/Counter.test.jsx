@@ -8,7 +8,7 @@ describe('<Counter>', () => {
 			<Counter
 				counter={0}
 				increment={() => {}}
-			/>
+			/>,
 		);
 
 		expect(counter.find('button').length).toBe(1);
@@ -19,7 +19,7 @@ describe('<Counter>', () => {
 				<Counter
 					counter={42}
 					increment={() => {}}
-				/>
+				/>,
 			);
 
 			expect(counter.find('button').text()).toBe('42');
@@ -30,7 +30,7 @@ describe('<Counter>', () => {
 				<Counter
 					counter={0}
 					increment={spy}
-				/>
+				/>,
 			);
 
 			counter.find('button').simulate('click');

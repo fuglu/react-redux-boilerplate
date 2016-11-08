@@ -9,7 +9,7 @@ ReactDOM.render(
 	<AppContainer>
 		<App />
 	</AppContainer>,
-	ROOT
+	ROOT,
 );
 
 if (__DEVELOPMENT__ && module.hot) {
@@ -20,7 +20,7 @@ if (__DEVELOPMENT__ && module.hot) {
 			<AppContainer>
 				<NextApp />
 			</AppContainer>,
-			ROOT
+			ROOT,
 		);
 	});
 }
