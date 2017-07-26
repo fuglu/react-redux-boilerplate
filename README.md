@@ -6,6 +6,9 @@ React/Redux Boilerplate
 [![GitHub version](https://badge.fury.io/gh/fuglu%2Freact-redux-boilerplate.svg)](http://badge.fury.io/gh/fuglu%2Freact-redux-boilerplate)
 
 
+:warning: :warning: :warning: **This project is deprecated. You should use [create-react-app](https://github.com/facebookincubator/create-react-app) instead.** :warning: :warning: :warning: 
+
+
 
 What's inside?
 --------------
